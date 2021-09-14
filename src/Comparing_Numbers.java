@@ -14,5 +14,24 @@ public class Comparing_Numbers {
         System.out.print("Enter the second number: ");
         Scanner secondInp = new Scanner(System.in);
         int secondNum = secondInp.nextInt();
+
+        System.out.print("Enter the third number: ");
+        Scanner thirdInp = new Scanner(System.in);
+        int thirdNum = thirdInp.nextInt();
+
+        if(firstNum > secondNum){
+            if(firstNum>thirdNum){
+                System.out.printf("The largest number is %d.", firstNum);
+            }
+            else{
+                System.out.printf("The largest number is %d.", thirdNum);
+            }
+        }
+        else if(secondNum > thirdNum){
+            System.out.printf("The largest number is %d.", secondNum);
+        }
+        else{
+            System.out.printf("The largest number is %d.", thirdNum);
+        }
     }
 }
